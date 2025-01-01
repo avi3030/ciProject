@@ -15,7 +15,7 @@ pipeline {
 
     stage('Build') {
       steps {
-        sh 'docker build -f curriculam-front/Dockerfile .'
+        sh 'docker build -t fuze365/curriculum-front:latest -f curriculam-front/Dockerfile . '
       }
     }
 
